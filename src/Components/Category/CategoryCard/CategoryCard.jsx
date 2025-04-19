@@ -6,7 +6,7 @@ import styles from'../category.module.css'
      
    return (
      <div className={styles.Card}>
-       <a href="">
+      <Link to={`/category/${data.name}`}>
         <span><h2>{data.category}</h2></span>
  
       <img src={
@@ -16,7 +16,7 @@ import styles from'../category.module.css'
       <p>{data.title}</p>
  
  
-       </a>
+      </Link>
      </div>
    )
  }

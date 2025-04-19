@@ -4,9 +4,9 @@ import React from 'react'
  const formattedAmount=numeral(amount).format("$0,0.00")
  
    return (
-     <div>
+     <>
        {formattedAmount}
-     </div>
+     </>
    )
  }
  

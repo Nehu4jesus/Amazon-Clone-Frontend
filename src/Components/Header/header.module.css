@@ -6,11 +6,12 @@
     background-color: #131921;
     color: white;
     position: relative;
-  
-    a {
-      color: white;
-    }
   }
+
+
+ .Header_container a {
+  color: white;
+}
   
   .header_left {
     display: flex;

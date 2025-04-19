@@ -1,17 +1,15 @@
-import React from 'react'
-import Header from './Components/Header/Header'
-import CarouselEffect from './Components/Carousel/CarouselEffect'
+import Routing from './Router'
 import './App.css'
 
 function App() {
 
 
   return (
-    <>
-     <Header />
-      <CarouselEffect />
-    </>
-  )
+    <div>
+      
+       <Routing/>
+    </div>
+  );
 }
 
-export default App
+export default App;

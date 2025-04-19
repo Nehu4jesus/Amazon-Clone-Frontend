@@ -5,20 +5,22 @@
  import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
  import LowerHeader from "./LowerHeader";
  import { IoSearchSharp } from "react-icons/io5";
+ import {Link} from 'react-router-dom'
+ import usa_Logo from '../../assets/Images/headerImage/united-states.png'
  function Header() {
    return (
     <>
     <section className={styles.Header_container}>
       <div className={styles.header_left}>
          
-         <a href="">
+      <Link to="/">
            
            <img
              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
              alt="amazon-logo"
            /> 
            {/* <span>.in</span> */}
-         </a>
+           </Link>
  
          <div className={styles.left_header_delivery}>
            <span className={styles.header_loactionIcon}>
@@ -59,12 +61,12 @@
          </div>
        </div>
        <div className={styles.header_right}>
-         <a href="" className={styles.language}>
+       <Link to="/auth" className={styles.header_signIn}>
            <div>
            <img
                                        width={24}
-                                     src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1024px-Flag_of_the_United_States.svg.png"
-                                     alt=""
+                                     src={usa_Logo}
+                                     alt="USA LOGO"
                                  />
              <select name="" id="">
                <option value="">EN</option>
@@ -72,24 +74,24 @@
                <option value="">Amharic</option>
              </select>
            </div>
-         </a>
+           </Link>
  
-         <a href="" className={styles.header_signIn}>
+         <Link to="/auth" className={styles.header_signIn}>
            <div>
              <p>Hello,signin</p>
              <span>Account & List</span>
            </div>
-         </a>
-         <a href="" className={styles.header_order }>
+           </Link>
+           <Link to="/orders" className={styles.header_order}>
            <div>
              <span>
                <p>Return</p>
              </span>
              <span>& Orders</span>
            </div>
-         </a>
+           </Link>
  
-         <a href="" className={styles.cart}>
+           <Link to="/cart" className={styles.cart}>
            
          <ShoppingCartOutlinedIcon />
              <span>
@@ -98,7 +100,7 @@
                
              </span>
          
-         </a>
+             </Link>
         </div>
        </section>
         <LowerHeader/>

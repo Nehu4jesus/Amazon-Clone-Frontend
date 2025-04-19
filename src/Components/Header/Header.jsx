@@ -1,15 +1,15 @@
  import React from "react";
- import styles from "./header.module.css";
- // import { CiSe from "./header.module.css";
- // import { CiSearch } from "react-icons/ci";
+ import styles from "./header.module.css"; 
  import { FaSearch } from "react-icons/fa";
  import { CiLocationOn } from "react-icons/ci";
  import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+ import LowerHeader from "./LowerHeader";
  import { IoSearchSharp } from "react-icons/io5";
  function Header() {
    return (
-     <section className={styles.Header_container}>
-       <div className={styles.header_left}>
+    <>
+    <section className={styles.Header_container}>
+      <div className={styles.header_left}>
          
          <a href="">
            
@@ -37,12 +37,14 @@
          </div>
        </div>
        <div className={styles.header_serach}>
+       <div className={styles.header_serach_select}> 
          <select name="" id="">
            <option value="">All</option>
  
            <option value="">Art& Crafts</option>
            <option value="">Automative</option>
          </select>
+        </div>
          <input type="text" placeholder="Search here"/>
  
          {/* searchIcon  here*/}
@@ -97,8 +99,10 @@
              </span>
          
          </a>
-       </div>
-     </section>
+        </div>
+       </section>
+        <LowerHeader/>
+     </>
    );
  }
  

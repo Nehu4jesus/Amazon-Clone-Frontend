@@ -3,7 +3,8 @@ import React from "react";
  import styles from "./product.module.css";
  import Rating from "@mui/material/Rating";
  import CurrencyForamt from "../CurrencyFormat/CurrencyFormat";
- import {Link, data} from "react-router-dom "
+ import { Link} from "react-router-dom";
+// Notice the space before the closing quote ^
  function ProductsCard({ product, renderDesc, flex }) {
     if (!product) {
       return <div>Product not found.</div>;
@@ -25,7 +26,7 @@ import React from "react";
       <div className={styles.Card_Image}>
     <Link to={`/products/${id}`}>
       {/* card image here */}
-         <img src={image} alt="" />
+         
          <img src={image} alt={`product image for ${title} `} loading="eager" />
          </Link>
       </div>

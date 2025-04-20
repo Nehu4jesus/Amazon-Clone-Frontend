@@ -27,17 +27,18 @@ import React, { useEffect, useState } from "react";
    return (
  
     <>
-    {isLoding ? (<Loader/>):(
-    
-    <section className={styles.Product_Container}>
-    <div className={styles.Product_wrapper}>
-    item?.map((singleProducts)=>{
+{isLoding ? (<Loader/>):(
+
+<section className={styles.Product_Container}>
+<div className={styles.Product_wrapper}>
+{
+item?.map((singleProducts)=>{
  return(
-   <ProductsCard
-     key={singleProducts.id}
- 
-     product={singleProducts}
-   />
+    <ProductsCard
+    key={singleProducts.id}
+    renderAdd={true}
+    product={singleProducts}
+  />
  )
  })
  }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
  import Layout from "../../Layout/Layout";
  import { useParams } from "react-router-dom";
- import ProductUrl from "../../../Api/ednpoints";
+ import ProductUrl from "../../../Api/endpoints";
  
- import styles from "./productdetail.module.css";
+ import styles from "./productDetail.module.css";
  import axios from "axios";
  import ProductsCard from "../../Products/ProductsCard";
  import Loader from "../../Loader/Loader";

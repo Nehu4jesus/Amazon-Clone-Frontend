@@ -1,4 +1,5 @@
 import styles from'../category.module.css'
+import { Link } from 'react-router-dom';
  
  
  function CategoryCards({data}) {
